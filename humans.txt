@@ -1,16 +1,15 @@
-/* TEAM */
-Web designer, Photographer: Steve Van Hoyweghen.                      
-Site: email, link to a contact form, etc.                          
-Twitter:@svhoy
-Location: Lochristi, Belgium.
+# humanstxt.org/
+# The humans responsible & technology colophon
 
-/* THANKS */					
-To all open source contributers in the world!
+# TEAM
 
-/* SITE */
-Last update: 2016/02/19                            
-Doctype:HTML5
-Standards: HTML5, CSS3, javascript, jpeg
-Language: English
-Components: Modernizr, jQuery, simple-lightbox, Justified Gallery
-Software: Python, notepad++, Jinja2, vips, exiftool, Lightroom, Photoshop, Windows 7
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
