@@ -190,7 +190,7 @@ a:hover .header_menu {
 }
 
 .navigation > .menu .page_title {
-	white-space: nowrap;
+	white-space: pre-line;
 	font-size: 1.2em;
 	padding: 4px;
 	margin: 0 6px 0 6px;
@@ -297,17 +297,42 @@ a:hover .header_menu {
 
 .sl-wrapper {
   background: black;
-  color: white;
 }
 
-.sl-wrapper button {
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter {
   color: white;
-  font-size: 60px;
-}
-
-.sl-wrapper .sl-navigation button {
   height: 200px;
+  width: 100px;
+  z-index: 500;
+  /*background: green;*/
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
   width: 200px;
+  text-align: right;
+}
+.sl-wrapper .sl-navigation button.sl-prev {
+  width: 200px;
+  text-align: left;
+}
+
+.sl-wrapper .sl-close {
+  position: fixed;
+  text-align: right;
+  height: 50px;
+  font-size: 3em;
+  z-index: 501;
+
+}
+
+.sl-wrapper .sl-counter {
+  font-size: 1.5rem;
+  position: fixed;
+  height: 50px;
+  left: 20px;
+  top: 20px;
 }
 
 .justified-gallery > a > .caption,
@@ -315,4 +340,8 @@ a:hover .header_menu {
 	font-size:16px;
 	/* font-family: 'Special Elite', sans-serif; !!!*/
 	font-family: 'Montserrat', sans-serif;
+}
+
+.sl-wrapper .sl-image .sl-caption.pos-outside {
+  bottom: auto;
 }
