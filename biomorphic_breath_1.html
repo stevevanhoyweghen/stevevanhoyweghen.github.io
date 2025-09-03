@@ -1,0 +1,111 @@
+<!doctype html><html class="no-js" lang="en"><head><meta charset="utf-8"><title>Steve Van Hoyweghen :: Biomorphic Breath #1</title><meta name='description' content='Steve Van Hoyweghen portfolio' /><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License" /><meta name='keywords' content='art,kinematic,electronics,photo,photographer,photography,portfolio,steve,van,hoyweghen' /><meta name="robots" content="index,follow" /><meta property="og:title" content="Steve Van Hoyweghen portfolio" /><meta property="og:type" content="website" /><meta property="og:url" content="https://stevevanhoyweghen.pages.dev/"><meta property="og:locale" content="en_US" /><meta property="og:site_name" content="Steve Van Hoyweghen portfolio" /><meta property="og:description" content="photography,art,installation,works" /><!-------------------------------------------------------------------------------------------------------------><link rel="apple-touch-icon" href="apple-touch-icon.png"><!-------------------------------------------------------------------------------------------------------------><link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet" type="text/css"><link rel="stylesheet" media="screen" type='text/css' href="css/justifiedGallery.min.css"/><link rel="stylesheet" media="screen" type='text/css' href="css/simple-lightbox.min.css"/><link rel='stylesheet' media="screen" type='text/css' href='css/style.min.css'><!-------------------------------------------------------------------------------------------------------------></head><body><div class="header_large"><a href="index.html" title="Home"><div class="header_logo"><span class="header_logo_1">Steve Van Hoyweghen</span> <span class="header_logo_2">Works</span> </div></a> <div class="header_title">Biomorphic Breath #1</div><a id="menu_toggle_large" class="menu_toggle" title="More" href="#"><div class="header_menu">&#9776; More</div></a> </div><div class="header_small"><div class="header_top"><a href="index.html" title="Home"><div class="header_logo"><span class="header_logo_1">Steve Van Hoyweghen</span> <span class="header_logo_2">Works</span> </div></a> <a id="menu_toggle_small" class="menu_toggle" title="More" href="#"><div class="header_menu">&#9776;</div></a> </div><div id="header_title_small" class="header_title">Biomorphic Breath #1</div></div><div id="content" class="content"><div id="lightbox" class="lightbox"> <a href="img/biomorphic_breath_1-01.jpg" title=""><img src="img/thumb/biomorphic_breath_1-01.jpg" title=""/></a> <a href="img/biomorphic_breath_1-02.jpg" title=""><img src="img/thumb/biomorphic_breath_1-02.jpg" title=""/></a> <a href="img/biomorphic_breath_1-03.jpg" title=""><img src="img/thumb/biomorphic_breath_1-03.jpg" title=""/></a> <a href="img/biomorphic_breath_1-04.jpg" title=""><img src="img/thumb/biomorphic_breath_1-04.jpg" title=""/></a></div><div class="explain"><p class="text"><h1>Introduction</h1>
+<p>Biomorphic Breath #1 is a kinetic installation that breathes new life into discarded computer parts.</p>
+<p>The work measures 3 by 4 meters and consists of a silver foil laid out on the ground. This foil moves up and down in an organic way, following a shifting, ‘breathing’ pattern. The viewer can influence the installation by adjusting the pattern, speed, and intensity.</p>
+<p>Biomorphic Breath #1 playfully demonstrates that with some creativity, raw materials and components deserve a second life.</p>
+<p>The name “Biomorphic Breath #1” is inspired by the association with
+breathing. The sequence number #1 suggests that more similar works
+can be expected.</p>
+
+<h1>Behavior</h1>
+<p>The installation sometimes behaves hectic, next almost unnoticeable, suddenly disturbingly irregular. The movement patterns change over time automatically.</p>
+<p>The audience can interact with the installation by choosing different
+breathing patterns with the remote control. They can also influence
+the speed and intensity of the movements by activating the sensors on
+each side of the remote control with their hands.
+<ul>
+	<li>Select a breathing cycle on the keyboard. Option 'All' performs all cycles
+	in succession. Selecting a specific cycle with an appropriate name is an option as well.</li>
+	<li>The closer you place your right hand to the right sensor, the slower the 'breathing'.</li>
+	<li>The closer you place your left hand to the left sensor, the weaker the 'breathing'.</li>
+</ul>
+</p>
+
+<h1>Mindset and Philosophy</h1>
+<ul>
+	<li>Reuse and up-cycle
+	<ul>
+		<li>The kinetic installation is partly made from e-waste and cheap household items that are
+		transformed into an engaging audience experience. I contacted the local waste management company and a computer store and asked for
+		old computer power supplies and cooling fans, which they happily supplied.</li>
+	</ul>
+	<li>Flexible and modular
+	<ul>
+		<li>The bags with back to back fans are a cheap way to do lightweight movements of fabrics, foils,
+		paper, etc. that can be combined in several ways.</li>
+	</ul>
+	<li>Low-cost
+	<ul>
+		<li>I am using abandoned fans sourced from unused processor coolers, an old desktop power supply, cheap
+		household items, throwaway items, standard UTP-cabling, cheap microcontrollers.</li>
+	</ul>
+	<li>Lightweight
+	<ul>
+		<li>The installation is light and compact to transport, minimizing transport and setup costs.</li>
+	</ul>
+	<li>Open source
+	<ul>
+		<li>I plan to document and share this project to enable other artists to use this concept for their own	goals.</li>
+	</ul>
+</ul>
+
+<h1>Technical Details</h1>
+<ul>
+	<li>Eight 60 liter trash bags are laying on the ground in a grid pattern.</li>
+	<li>Each trash bag has two fans mounted in opposite directions. The fans are placed in a tube made from PET bottles. This setup makes it possible to
+	inflate and deflate the bags under software control. The fans are from abandoned CPU-coolers. Rubber bandages keep the bags in place.</li>
+	<li>The CPU-cooler fans are controlled with Pulse Width Modulation. The PWM-signals are controlled with a microcontroller programmed in
+	C++. I used the Arduino environment to keep the technical barrier low for less technical builders who like to implement a similar system.</li>
+	<li>The microcontroller is connected with 16 fans in total to control the inflate-deflate cycle of each bag individually. Different
+	predetermined sequences or randomly generated sequences are implemented. The duration and intensity of the inflate-deflate
+	cycles are controlled within certain limits.</li>
+	<li>On top of the bags are four connected Mylar emergency foil blankets, each measuring 160 cm by 210 cm. The foils are pushed up and down by
+	the inflate-deflate cycles of the trash bags. The maximum height is about 50 cm.</li>
+	<li>The whole construction is fixed with a construction of recycled tent poles.</li>
+	<li>The remote has a touch screen and two ultrasonic sensors allowing the audience to interact with the installation:
+	<ul>
+		<ul>
+			<li>Selecting different programmed inflate-deflate sequences.</li>
+			<li>Select a random sequence.</li>
+			<li>Change the intensity of the inflation-deflation sequences by moving one hand in front of an ultrasonic sensor.</li>
+			<li>Change the pace of the inflation-deflation sequences by moving another hand in front of the second ultrasonic transducer.</li>
+		</ul>
+	</ul>
+</ul>
+
+<h1>Material list</font></h1>
+<ul>
+	<li>16 recycled CPU cooler fans.</li>
+	<li>8 plastic trash bags made from recycled materials.</li>
+	<li>6 PET beverage bottles.</li>
+	<li>Galvanized wire mesh to protect fans and people.</li>
+	<li>4 Mylar sheets, also known as space blankets or emergency blankets.</li>
+	<li>A frame build from tent poles from old tents to fix the Mylar sheets.</li>
+	<li>1 recycled computer power supply.</li>
+	<li>2 Espressif ESP32-WROOM-32 microcontrollers.</li>
+	<li>1 ESP32-2432S028R, a.k.a. the Cheap Yellow Display.</li>
+	<li>UTP network cables providing power and signal interconnections.</li>
+	<li>Prototyping printed circuit boards.</li>
+	<li>Electric components like resistors, BS170 fets, capacitors, diodes, etc.</li>
+	<li>Solder.</li>
+	<li>Electric wire.</li>
+	<li>Several electric interconnection materials.</li>
+	<li>RJ45 connectors.</li>
+	<li>Tape.</li>
+	<li>Elastic bands.</li>
+	<li>An old shoebox.</li>
+	<li>2 photography lamp stand tripods.</li>
+	<li>1 LED lamp 30 watt.</li>
+	<li>3D-printed enclosure.</li>
+	<li>USB cable.</li>
+	<li>2 HC-SR04 ultrasonic sensors.</li>
+	<li>USB power supply.</li>
+</ul>
+</p></div></div><div class="navigation"><nav id="menu" class="menu"><div class="category_title">Installations</div><span class="page_title">Biomorphic Breath #1</span><a class="page_title" href="retinal_attack.html" title="Retinal Attack">Retinal Attack</a><div class="category_title">Photography: Conceptual</div><a class="page_title" href="food_photography.html" title="Food photography?">Food photography?</a><a class="page_title" href="the_flesh_is_weak.html" title="The flesh is weak">The flesh is weak</a><a class="page_title" href="light_works.html" title="Light Works">Light Works</a><div class="category_title">Photography: Places</div><a class="page_title" href="albania.html" title="Albania">Albania</a><a class="page_title" href="antwerp.html" title="Antwerp">Antwerp</a><a class="page_title" href="belgian_coast.html" title="Belgian Coast">Belgian Coast</a><a class="page_title" href="berlin.html" title="Berlin">Berlin</a><br><a class="page_title" href="extremadura.html" title="Extremadura">Extremadura</a><a class="page_title" href="french_coast.html" title="French Coast">French Coast</a><a class="page_title" href="ghent.html" title="Ghent">Ghent</a><a class="page_title" href="jokulsarlon.html" title="Jökulsárlón">Jökulsárlón</a><br><a class="page_title" href="liege.html" title="Liège">Liège</a><a class="page_title" href="lille.html" title="Lille">Lille</a><a class="page_title" href="lochristi.html" title="Lochristi">Lochristi</a><a class="page_title" href="prague.html" title="Prague">Prague</a><br><a class="page_title" href="new_york.html" title="New York">New York</a><a class="page_title" href="villette.html" title="Parc de la Villette">Parc de la Villette</a><a class="page_title" href="ubud_monkey_forest.html" title="Ubud">Ubud</a><div class="category_title">About</div><a class="page_title" href="about.html" title="Steve">Steve</a> <a class="page_title" href="about.html#prints" title="prints">Prints</a> <a class="page_title" href="about.html#licensing" title="Licensing">Licensing</a> <a class="page_title" href="about.html#contact" title="Contact">Contact</a><div class="category_title"><a href="index.html" title="Home">Home</a></div></nav></div><div class="footer"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target='_blank'><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br/>All these <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">works</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Steve Van Hoyweghen</span> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target='_blank'>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>. Permissions beyond the scope of this license are available under <a xmlns:cc="http://creativecommons.org/ns#" href="about.html#licensing" rel="cc:morePermissions" target='_blank'>licensing</a>.</div><script src="js/vendor/modernizr-3.11.2.min.js"></script><script src="js/plugins.js"></script><script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery.justifiedGallery.min.js"></script>
+		<script src="js/vendor/simple-lightbox.jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			window.globals = {justifiedGalleryRowHeight: 240};
+        </script>
+    </body>
+</html>
